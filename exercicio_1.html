@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <h1>Numeros</h1>
+    <div id="resul"></div>
+
+    <script>
+        let num_1 = Number(prompt("Digite um Número"));
+        let num_2 = Number(prompt("Digite um Número"));
+        let msg;
+        if(num_1 >= num_2){
+            msg = "O Primeiro número é maior";
+        }else{
+            msg = "O Segundo número é maior";
+        }
+
+        document.getElementById("resul").innerHTML = msg;
+    </script>
+</body>
+</html>

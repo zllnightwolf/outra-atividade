@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+    <h1>Medidor de Peso</h1>
+    <p> O mais gordo é:<div id="resul"></div> </p>
+    <div id="pessoa"></div>
+    <script>
+        let pessoa_1 = prompt("Digite o seu nome");
+        let peso_1 = Number(prompt("Digite o seu Peso"));
+        let pessoa_2 = prompt("Digite o seu nome");
+        let peso_2 = Number(prompt("Digite o seu Peso"));
+        let msg;
+        if(peso_1 >= peso_2){
+            msg = pessoa_1;
+        }else{
+            msg = pessoa_2;
+        }
+
+        document.getElementById("resul").innerHTML = msg
+    </script>
+</body>
+</html>
